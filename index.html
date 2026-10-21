@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muzan Ali — Software Engineer | AI Agents, Automation & Full-Stack Systems</title>
+<meta name="description" content="Muzan Ali designs and builds software applications, API-connected automations, and intelligent workflows. Projects, solution concepts, and repositories.">
+<link rel="canonical" href="https://muzansiddig.github.io/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://muzansiddig.github.io/portfolio/">
+<meta property="og:title" content="Muzan Ali — Software Engineer">
+<meta property="og:image" content="https://muzansiddig.github.io/portfolio/images/procurement-approval-agent.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14171c">
+<meta property="og:description" content="AI agents, automation, and full-stack systems. Selected engineering work and repositories.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0f13;--s1:#12161c;--s2:#181d25;--ln:#262d38;--tx:#e8e6e0;--mu:#98a1ad;--ac:#7fc4b0;--ok:#d9a441;--r:6px;--sf:"Newsreader",Georgia,"Times New Roman",serif;--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f5f1;--s1:#fff;--s2:#edebe5;--ln:#d9d6cc;--tx:#15181d;--mu:#565e69;--ac:#1b7a65;--ok:#8a5a00;color-scheme:light}:root:not([data-theme="dark"]) .b.p{color:#fff}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-weight:500;letter-spacing:-.015em;line-height:1.1}
+h1,h2,.pj h3,.rc h3{font-family:var(--sf)}
+a{color:inherit}:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.mono{font-family:var(--mono);font-size:12.5px;color:var(--mu)}
+.w{max-width:1200px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--ln)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:21}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.br{font:500 20px var(--sf);text-decoration:none}
+.lk{display:flex;gap:26px;align-items:center}.lk a{text-decoration:none;color:var(--mu);font-size:14.5px;transition:color .2s}.lk a:hover{color:var(--tx)}
+.lk a:not(.b).on{color:var(--tx);box-shadow:0 1px 0 var(--ac);padding-bottom:3px}
+.b{display:inline-block;padding:11px 18px;border-radius:var(--r);border:1px solid var(--ln);text-decoration:none;font:500 14.5px Inter,sans-serif;background:none;color:var(--tx);cursor:pointer;transition:border-color .2s,background .2s,transform .15s}
+.b:hover{border-color:var(--ac)}.b:active{transform:translateY(1px)}.b.p{background:var(--ac);border-color:var(--ac);color:#0c0f13}.b.p:hover{filter:brightness(1.1)}.lk a.b{color:var(--tx)}
+#mn{display:none}
+section{padding:104px 0;border-bottom:1px solid var(--ln)}
+#workflows,#solutions,#directory{background:var(--s1)}
+h2{font-size:clamp(32px,4vw,48px);margin-bottom:16px;max-width:22ch}
+.ld{color:var(--mu);max-width:62ch;margin:0 0 52px;font-size:17px}
+.eb{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--ac);margin:0 0 20px}
+.hero{padding:76px 0 92px}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center}
+h1{font-size:clamp(40px,5.6vw,72px);line-height:1.03;letter-spacing:-.025em}
+.hero p.s{color:var(--mu);font-size:18px;max-width:50ch;margin:26px 0 34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.pf{display:flex;gap:10px 22px;flex-wrap:wrap;margin:36px 0 0;padding:18px 0 0;border-top:1px solid var(--ln);font:500 12.5px var(--mono)}.pf a{color:var(--mu);text-decoration:none}.pf a:hover{color:var(--ac)}
+.fp{border:1px solid var(--ln);background:var(--s1);border-radius:var(--r);padding:10px 0}
+.fh{display:flex;justify-content:space-between;padding:6px 20px 12px;border-bottom:1px solid var(--ln)}
+.flow{list-style:none;margin:0;padding:8px 0 0}
+.flow li{position:relative;display:grid;grid-template-columns:44px 1fr;gap:12px;padding:11px 20px;animation:step 12s infinite;animation-delay:calc(var(--i)*2s)}
+.flow li::before{content:"";position:absolute;left:41px;top:0;bottom:0;width:1px;background:var(--ln)}.flow li:first-child::before{top:50%}.flow li:last-child::before{bottom:50%}
+.flow .n{position:relative;z-index:1;width:30px;height:30px;border-radius:50%;border:1px solid var(--ln);background:var(--s1);display:grid;place-items:center;font:500 11px var(--mono);color:var(--mu);animation:dot 12s infinite;animation-delay:calc(var(--i)*2s)}
+.flow b{font-weight:600;font-size:15px;display:block;line-height:1.3}.flow span:not(.n){font-size:13.5px;color:var(--mu)}
+.flow li.hu .n{border-color:var(--ok);color:var(--ok)}
+@keyframes step{0%,14%{background:var(--s2)}16.7%,100%{background:transparent}}
+@keyframes dot{0%,14%{border-color:var(--ac);color:var(--ac)}16.7%,100%{}}
+.cap{font-size:13px;color:var(--mu);margin:12px 0 0}
+.pj{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center;padding:64px 0;border-top:1px solid var(--ln)}
+.pj:first-of-type{border-top:0;padding-top:0}
+.pj.fl{grid-template-columns:7fr 5fr}.pj.fl .vis{order:-1}
+.num{font:400 clamp(56px,7vw,88px)/1 var(--sf);color:var(--ln);margin-bottom:6px}
+.st{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--ac);margin-bottom:14px}
+.pj h3{font-size:clamp(28px,3.2vw,40px);margin-bottom:16px}.pj p{color:var(--mu);margin:0 0 14px}
+.dl{display:grid;grid-template-columns:84px 1fr;gap:8px 16px;margin:20px 0 24px;padding:16px 0;border-block:1px solid var(--ln);font-size:14px}
+.dl dt{font:500 11.5px var(--mono);color:var(--mu);text-transform:uppercase;letter-spacing:.07em;padding-top:3px}.dl dd{margin:0}
+.ck{margin:0 0 20px;padding:0;list-style:none;color:var(--mu);font-size:15px}.ck li{padding:5px 0 5px 18px;position:relative}.ck li::before{content:"";position:absolute;left:0;top:15px;width:7px;height:1px;background:var(--ac)}
+.diag{border:1px solid var(--ln);background:var(--s1);border-radius:var(--r);padding:30px;display:grid;transition:border-color .3s}.pj:hover .diag{border-color:var(--ac)}
+.diag .nd{border:1px solid var(--ln);background:var(--bg);border-radius:var(--r);padding:12px 16px;display:flex;justify-content:space-between;gap:16px;font-size:14.5px}
+.diag .nd small{color:var(--mu);font-size:13px;text-align:right}
+.diag .ar{height:26px;position:relative;font:500 11.5px var(--mono);color:var(--mu);display:flex;align-items:center;justify-content:center}
+.diag .ar::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--ac)}
+.diag .ar span{position:relative;background:var(--s1);padding:0 8px}
+figure{margin:0}
+.fb{display:block;width:100%;padding:0;border:1px solid var(--ln);background:var(--s1);border-radius:var(--r);cursor:zoom-in;overflow:hidden;line-height:0;transition:border-color .25s}
+.fb:hover{border-color:var(--ac)}.fb img{width:100%;height:auto;display:block;transition:transform .5s ease}.fb:hover img{transform:scale(1.012)}
+figcaption{font-size:13.5px;color:var(--mu);padding:10px 2px 0;line-height:1.5}
+.dom{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--ac);margin-right:6px}.sh{display:block;margin-top:3px;font-size:13px}
+.lab{border-left:3px solid var(--ok);padding:4px 0 4px 14px;color:var(--mu);margin:0 0 56px;max-width:70ch;font-size:15px}
+.gp{display:grid;grid-template-columns:4fr 8fr;gap:44px;padding:60px 0;border-top:1px solid var(--ln);align-items:start}
+.gp.fl{grid-template-columns:8fr 4fr}.gp.fl .gt{order:2}
+.gt h3{font:500 26px/1.15 var(--sf);margin-bottom:12px}.gt p{color:var(--mu);margin:0 0 14px;font-size:15.5px}.gt .mono{margin-bottom:20px;display:block}
+.gs{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.wfg{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.wfg .fb{max-width:560px}.wfg h3{font:500 26px/1.15 var(--sf);margin:24px 0 10px}.wfg p{color:var(--mu);margin:0 0 12px;font-size:15.5px}.wfg p a{color:var(--ac)}.wfg .ck{margin-bottom:0}
+.rg{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.rc{grid-column:span 2;border:1px solid var(--ln);background:var(--s1);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:12px;transition:border-color .25s,transform .25s}
+.rc.wd{grid-column:span 3}.rc:hover{border-color:var(--ac);transform:translateY(-2px)}
+.rc h3{font-size:26px}.rc p{margin:0;color:var(--mu);font-size:15px}.rc .mono{margin-top:auto;padding-top:10px}
+.rc a{color:var(--ac);text-decoration:none;font-weight:500;font-size:15px}.rc a:hover{text-decoration:underline}
+.cr{border-top:1px solid var(--ln);padding:24px 0;display:grid;grid-template-columns:200px 1fr;gap:24px}
+.cap6{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.cr h3{font:600 17px Inter,sans-serif;letter-spacing:0}.cr p{margin:0 0 8px;font-size:15px;color:var(--mu)}.cr p b{color:var(--tx);font-weight:500}
+.tl{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:20px}
+.tl input{flex:1;min-width:220px;padding:11px 13px;border-radius:var(--r);border:1px solid var(--ln);background:var(--bg);color:var(--tx);font:inherit}
+.ch{display:flex;gap:8px;flex-wrap:wrap}.ch button{padding:8px 14px;border-radius:var(--r);border:1px solid var(--ln);background:none;color:var(--mu);cursor:pointer;font:inherit;font-size:14px;transition:border-color .2s,color .2s}.ch button:hover{border-color:var(--ac);color:var(--tx)}
+.ch button[aria-pressed="true"]{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.dr{border-top:1px solid var(--ln)}
+.rw{display:grid;grid-template-columns:240px 1fr 220px 100px;gap:18px;align-items:center;padding:15px 0;border-bottom:1px solid var(--ln);font-size:15px}
+.rw h3{font:600 16px Inter,sans-serif;letter-spacing:0;word-break:break-word}.rw p{margin:0;color:var(--mu)}.rw a{justify-self:end;color:var(--ac);text-decoration:none;font-weight:500}.rw a:hover{text-decoration:underline}
+.em{padding:28px 0;color:var(--mu)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.ab{font:400 clamp(22px,2.4vw,30px)/1.45 var(--sf);margin:0}
+.cf{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.fm{display:grid;gap:14px}.fm label{display:grid;gap:6px;font-size:14px;color:var(--mu)}
+.fm select,.fm textarea{padding:11px 13px;border-radius:var(--r);border:1px solid var(--ln);background:var(--s1);color:var(--tx);font:inherit}
+#ss{min-height:1.5em;font-size:15px;color:var(--mu)}
+footer{padding:28px 0;color:var(--mu);font-size:14px}footer a{text-decoration:none}footer a:hover{color:var(--ac)}
+dialog{border:1px solid var(--ln);background:var(--s1);color:var(--tx);padding:14px;max-width:min(1400px,96vw);border-radius:var(--r)}
+dialog::backdrop{background:rgba(8,10,14,.82)}
+dialog img{margin:0 auto;width:100%;height:auto;max-height:80vh;object-fit:contain;display:block}
+dialog p{margin:10px 0 0;font-size:14px;color:var(--mu)}dialog .b{margin-top:10px}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}.js .rv.in{opacity:1;transform:none}
+@media (max-width:960px){.lk a:not(.b){display:none}.lk.o{position:absolute;top:64px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--ln);flex-direction:column;align-items:stretch;padding:18px 28px;gap:16px}.lk.o a:not(.b){display:block}#mn{display:inline-block}
+.hg,.pj,.pj.fl,.gp,.gp.fl,.two,.cf,.cap6,.wfg{grid-template-columns:1fr}.pj.fl .vis{order:0}.gp.fl .gt{order:0}.hg{gap:44px}.rw{grid-template-columns:1fr auto}.rw p,.rw .mono{grid-column:1/-1}.cr{grid-template-columns:1fr;gap:8px}section{padding:72px 0}.hero{padding:44px 0 64px}.rg{grid-template-columns:1fr 1fr}.rc,.rc.wd{grid-column:span 1}.rc:last-child{grid-column:span 2}.pj{gap:32px;padding:48px 0}}
+@media (max-width:640px){.rc:last-child{grid-column:span 1}.gs,.rg{grid-template-columns:1fr}.w{padding:0 20px}.diag{padding:18px}.dl{grid-template-columns:1fr;gap:2px}.dl dt{margin-top:8px}.flow li{padding:10px 14px}.fh{padding:6px 14px 12px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.flow li,.flow .n{animation:none}.js .rv{opacity:1;transform:none;transition:none}.fb img,.rc{transition:none}}
+</style></head>
+<body>
+<header><div class="w"><nav aria-label="Main"><a class="br" href="#top">Muzan Ali</a>
+<div class="lk" id="lk"><a href="#projects">Projects</a><a href="#workflows">Workflows</a><a href="#range">Range</a><a href="#solutions">AI Solutions</a><a href="#engineering">Engineering</a><a href="#directory">Directory</a><a href="#about">About</a><a class="b" href="#contact">Contact</a></div>
+<button class="b" id="mn" aria-expanded="false" aria-controls="lk">Menu</button></nav></div></header>
+<main id="top">
+<section class="hero"><div class="w hg">
+<div><p class="eb">Muzan Ali · Software Engineer</p>
+<h1>Engineering intelligent systems for real-world workflows.</h1>
+<p class="s">I design and build software applications, API-connected automations, and intelligent workflows that connect technology, data, and business operations.</p>
+<div class="cta"><a class="b p" href="#projects">Explore Projects</a><a class="b" href="#workflows">See Workflows</a><a class="b" href="https://github.com/muzansiddig" target="_blank" rel="noopener noreferrer">View GitHub</a></div>
+<div class="pf"><a href="#projects">NexaDesk AI</a><a href="#projects">AI-OS gateway</a><a href="#workflows">n8n automations</a><a href="#range">Flutter · FastAPI · React</a></div></div>
+<div><div class="fp"><div class="fh mono"><span>workflow pattern</span><span>trigger → action</span></div>
+<ol class="flow" aria-label="How an automated workflow is structured">
+<li style="--i:0"><span class="n">01</span><div><b>Trigger</b><span>Webhook, form, message, or schedule</span></div></li>
+<li style="--i:1"><span class="n">02</span><div><b>Business rules</b><span>Explicit thresholds and routing</span></div></li>
+<li style="--i:2"><span class="n">03</span><div><b>AI reasoning</b><span>Classify, extract, decide, validate</span></div></li>
+<li style="--i:3"><span class="n">04</span><div><b>API integration</b><span>CRM, email, calendar, databases</span></div></li>
+<li class="hu" style="--i:4"><span class="n">05</span><div><b>Human approval</b><span>Sensitive actions wait for a person</span></div></li>
+<li style="--i:5"><span class="n">06</span><div><b>Automated action</b><span>Write back, notify, log every step</span></div></li></ol></div>
+<p class="cap">An illustrative workflow pattern, not a single deployed product.</p></div>
+</div></section>
+
+<section id="projects"><div class="w">
+<h2>Selected projects</h2><p class="ld">Software built around orchestration, human control, and verifiable behavior. Each links to its repository.</p>
+
+<article class="pj"><div><div class="num">01</div><div class="st">NexaDesk AI · in development</div><h3>AI-assisted customer operations platform</h3>
+<p>Conversations, team assignment, knowledge lookup, controlled agent workflows, and approvals in one human-supervised workspace.</p>
+<dl class="dl"><dt>Domain</dt><dd>Conversational AI · enterprise systems</dd><dt>Stack</dt><dd>TypeScript, Node.js, PostgreSQL, Vite, Playwright, Auth0 (per README)</dd></dl>
+<ul class="ck"><li>Server-authoritative state with tenant isolation and membership checks</li><li>Transactional outbox, idempotency keys, conservative handling of ambiguous delivery</li><li>Human takeover and AI pause or resume, guarded by control-version checks</li><li>Authenticated live updates over SSE; OIDC and JWT sign-in</li><li>Playwright E2E, API, and integration tests</li></ul>
+<a class="b p" href="https://github.com/muzansiddig/Autonomous-AI-Contact-Center-NexaDesk-AI" target="_blank" rel="noopener noreferrer">View repository</a></div>
+<div class="vis"><div class="diag" role="img" aria-label="NexaDesk architecture: browser UI to Node.js API to PostgreSQL, with a Telegram adapter">
+<div class="nd"><b>Browser UI</b><small>Vite · conversation workspace</small></div><div class="ar"><span>/v1 · SSE</span></div>
+<div class="nd"><b>Node.js API</b><small>Auth · tenancy · control versions</small></div><div class="ar"><span>transactions</span></div>
+<div class="nd"><b>PostgreSQL</b><small>Messages · knowledge · tasks · outbox</small></div><div class="ar"><span>adapter</span></div>
+<div class="nd"><b>Telegram adapter</b><small>Private text messages</small></div></div>
+<p class="cap">Architecture as documented in the repository README.</p></div></article>
+
+<article class="pj fl"><div><div class="num">02</div><div class="st">AI-OS · orchestration foundation verified locally</div><h3>Unified gateway for AI agents</h3>
+<p>A local-first orchestration layer that classifies intent, plans the task, and routes execution to specialized agent services behind one entry point.</p>
+<dl class="dl"><dt>Domain</dt><dd>AI agent orchestration</dd><dt>Stack</dt><dd>Python, FastAPI, Ollama, Docker Compose (per README)</dd></dl>
+<ul class="ck"><li>FastAPI gateway with classifier, planner, registry, and dispatcher</li><li>Adapters for Open Interpreter, Browser Use, OpenHands, CrewAI, and AutoGPT on a shared HTTP contract</li><li>Local inference through Ollama</li><li>README reports a passing end-to-end path from the gateway to Open Interpreter to Ollama, and intent routing across five service types</li></ul>
+<a class="b p" href="https://github.com/muzansiddig/AI-OS" target="_blank" rel="noopener noreferrer">View repository</a></div>
+<div class="vis"><div class="diag" role="img" aria-label="AI-OS architecture: gateway, dispatcher, agent services, Ollama">
+<div class="nd"><b>Gateway</b><small>FastAPI · :8000</small></div><div class="ar"><span>classify · plan · look up</span></div>
+<div class="nd"><b>Dispatcher</b><small>Routes by intent</small></div><div class="ar"><span>HTTP contract</span></div>
+<div class="nd"><b>Agent services</b><small>Terminal · browser · code · multi-agent · research</small></div><div class="ar"><span>inference</span></div>
+<div class="nd"><b>Ollama</b><small>Local models</small></div></div>
+<p class="cap">Architecture as documented in the repository README.</p></div></article>
+
+<article class="pj"><div><div class="num">03</div><div class="st">Veritas Legal · application</div><h3>Judicial case management interface</h3>
+<p>An application organized around cases, evidence, timelines, hearings and tasks, analytics, and AI insights. The screenshot shows the Hearings &amp; Deadlines board.</p>
+<dl class="dl"><dt>Domain</dt><dd>Legal technology · enterprise software</dd><dt>Basis</dt><dd>Repository README describes a modular monolith built for traceability</dd></dl>
+<a class="b p" href="https://github.com/muzansiddig/Veritas-Legal" target="_blank" rel="noopener noreferrer">View repository</a></div>
+<div class="vis" id="ver"></div></article>
+</div></section>
+
+<section id="workflows"><div class="w">
+<h2>Workflow automation in n8n</h2>
+<p class="ld">Two workflow canvases that show how I wire triggers, AI models, and external APIs together. They are screenshots of the editor, so they show structure rather than run results.</p>
+<div class="wfg" id="wf"></div>
+</div></section>
+
+<section id="range"><div class="w">
+<h2>Different problems, different stacks</h2>
+<p class="ld">Beyond the flagships: mobile, finance, machine learning, workflow automation, and multi-agent systems. Stacks listed here come from each repository’s README.</p>
+<div class="rg">
+<article class="rc wd"><span class="dom">Mobile</span><h3>Believer AI</h3><p>Cross-platform Flutter mobile application.</p><span class="mono">Flutter · Dart</span><a href="https://github.com/muzansiddig/believer-app" target="_blank" rel="noopener noreferrer">Repository →</a></article>
+<article class="rc wd"><span class="dom">Finance &amp; documents</span><h3>FinSight</h3><p>Invoice and document review inside an isolated workspace for each organization.</p><span class="mono">Node.js 20+ · React 18</span><a href="https://github.com/muzansiddig/finsigth" target="_blank" rel="noopener noreferrer">Repository →</a></article>
+<article class="rc"><span class="dom">Machine learning</span><h3>Software Effort Estimation</h3><p>Effort estimation with COCOMO II and XGBoost on the NASA93 dataset.</p><span class="mono">Python · FastAPI · React · Vite</span><a href="https://github.com/muzansiddig/Software-Effort-Estimation" target="_blank" rel="noopener noreferrer">Repository →</a></article>
+<article class="rc"><span class="dom">Workflow automation</span><h3>AI Deal &amp; Negotiation Simulator</h3><p>An n8n agent that evaluates and negotiates deals using OpenAI GPT or Gemini.</p><span class="mono">n8n · OpenAI / Gemini</span><a href="https://github.com/muzansiddig/AI-Deal-Negotiation-Simulator" target="_blank" rel="noopener noreferrer">Repository →</a></article>
+<article class="rc"><span class="dom">Multi-agent AI</span><h3>Business &amp; Market Analysis</h3><p>A system of six specialized AI agents that turns a business idea into a market analysis and strategy.</p><span class="mono">Python · multi-agent</span><a href="https://github.com/muzansiddig/Intelligent-multi-expert-system-for-business-market-analysis" target="_blank" rel="noopener noreferrer">Repository →</a></article>
+</div></div></section>
+
+<section id="solutions"><div class="w">
+<h2>AI automation & business systems</h2>
+<p class="ld">Workflow solutions that connect AI capabilities, business rules, APIs, and existing software to reduce repetitive work and improve operational visibility.</p>
+<p class="lab">The interfaces below are illustrative solution concepts for proposed workflows. They are design visuals, not delivered or deployed software. Select any image to enlarge it.</p>
+<div id="gr"></div>
+</div></section>
+
+<section id="engineering"><div class="w">
+<h2>Engineering depth</h2><p class="ld">Capabilities, with the repositories that show them.</p>
+<div class="cap6" id="cap"></div>
+</div></section>
+
+<section id="directory"><div class="w">
+<h2>Repository directory</h2><p class="ld">Every project on my profile. <a href="https://github.com/muzansiddig?tab=repositories" target="_blank" rel="noopener noreferrer">Open the full GitHub profile</a>.</p>
+<div class="tl"><input id="q" type="search" placeholder="Search by name, topic, or technology" aria-label="Search repositories"><div class="ch" id="ch" role="group" aria-label="Filter by category"></div></div>
+<div class="dr" id="dr" aria-live="polite"></div>
+</div></section>
+
+<section id="about"><div class="w two"><h2>About</h2>
+<p class="ab">I build AI-powered applications, intelligent automation workflows, and full-stack software systems. My work focuses on connecting software architecture, APIs, data processing, and applied AI to solve practical engineering and operational problems.</p></div></section>
+
+<section id="contact"><div class="w cf"><div><h2>Have a workflow worth automating?</h2><p class="ld" style="margin-bottom:20px">Tell me what your team is trying to improve, and let’s explore a practical technical solution.</p>
+<p style="margin:0 0 8px"><a href="mailto:muzansiddiv11@gmail.com">muzansiddiv11@gmail.com</a></p>
+<p style="margin:0"><a href="https://www.linkedin.com/in/muzan-ali-4a003a1a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/muzansiddig" target="_blank" rel="noopener noreferrer">GitHub</a></p></div>
+<div class="fm"><label>Topic<select id="t"><option>Software engineering opportunity</option><option>AI automation workflow</option><option>Technical collaboration</option><option>Other</option></select></label>
+<label>A few words about it (optional)<textarea id="m" rows="4"></textarea></label>
+<div><a class="b p" id="go" href="https://www.linkedin.com/in/muzan-ali-4a003a1a4/" target="_blank" rel="noopener noreferrer">Message me on LinkedIn</a></div>
+<div id="ss" role="status"></div></div></div></section>
+</main>
+<footer><div class="w" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><span>© 2026 Muzan Ali</span><span><a href="https://github.com/muzansiddig" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/muzan-ali-4a003a1a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="mailto:muzansiddiv11@gmail.com">Email</a></span></div></footer>
+<dialog id="lb" aria-label="Enlarged image"><img alt=""><p></p><button class="b" id="lx">Close</button></dialog>
+<script>
+const G="https://github.com/muzansiddig/",ex='target="_blank" rel="noopener noreferrer"';
+const IM={"pi": {"s": "images/process-intelligence-agent.jpg", "w": 1376, "h": 768}, "dp": {"s": "images/demand-pricing-agent.jpg", "w": 1376, "h": 768}, "chat": {"s": "images/chat-to-dashboard-operator.jpg", "w": 1376, "h": 768}, "rr": {"s": "images/revenue-recovery-agent.jpg", "w": 1376, "h": 768}, "sup": {"s": "images/supplier-negotiation-agent.jpg", "w": 1376, "h": 768}, "trv": {"s": "images/travel-booking-agent.jpg", "w": 1376, "h": 768}, "proc": {"s": "images/procurement-approval-agent.jpg", "w": 1376, "h": 768}, "leak": {"s": "images/revenue-leakage-agent.jpg", "w": 1376, "h": 768}, "cs": {"s": "images/customer-support-agent.jpg", "w": 1376, "h": 768}, "mkt": {"s": "images/marketing-optimization-agent.jpg", "w": 1376, "h": 768}, "inv": {"s": "images/inventory-procurement-agent.jpg", "w": 1376, "h": 768}, "invc": {"s": "images/invoice-collections-agent.jpg", "w": 1376, "h": 768}, "crm": {"s": "images/sales-crm-agent.jpg", "w": 1376, "h": 768}, "shop": {"s": "images/ecommerce-operations-agent.jpg", "w": 1376, "h": 768}, "ver": {"s": "images/veritas-hearings-board.png", "w": 1360, "h": 643}, "n1": {"s": "images/n8n-voice-lead-booking-workflow.png", "w": 502, "h": 463}, "n2": {"s": "images/n8n-ai-agent-form-workflow.png", "w": 470, "h": 573}};
+const D={
+n1:["n8n workflow canvas with three webhook-triggered flows: a Tally form lead updating Airtable and starting a Vapi call, a booking tool call creating a Cal.com booking, and an end-of-call report branching into Airtable updates and Gmail messages","Lead intake, voice call, booking, and follow-up workflow in n8n"],
+n2:["n8n workflow canvas: a webhook form trigger feeds an AI Agent node with Window Buffer Memory and a Google Gemini chat model, then a true or false condition routes to OpenAI, Gmail, and Google Sheets nodes","Form-triggered AI agent workflow with memory, conditional routing, email, and Sheets logging"],
+ver:["Veritas Hearings and Deadlines board with pending, in-progress, and completed tasks","Veritas Legal interface screenshot: Hearings & Deadlines board"],
+cs:["Concept interface for an AI customer support agent: workflow builder, supervisor workspace, tickets, and KPI panels","Customer support workspace with workflow builder and supervisor view"],
+chat:["Concept interface for a chat-to-dashboard operator with English and Arabic titles","Chat-to-dashboard operator: plain-language questions to charts and tables"],
+crm:["Concept interface for an AI sales and CRM agent: deal pipeline, lead detail, follow-up builder, analytics","Sales and CRM agent: pipeline, lead detail, and follow-up sequences"],
+shop:["Concept Arabic-language interface for an e-commerce operations agent: orders, inventory, shipping, returns","E-commerce operations agent, Arabic interface"],
+mkt:["Concept interface for a marketing optimization agent: campaigns, budget allocation, rule builder","Marketing optimization agent: campaigns, budgets, and rules"],
+invc:["Concept interface for invoice and payment matching with collections and aging workspace","Invoice and payment matching with collections workspace"],
+rr:["Concept interface for a revenue recovery agent: discovery queue, case detail, playbook builder","Revenue recovery agent: discovery queue and playbooks"],
+leak:["Concept interface for a revenue leakage agent: detected cases, root-cause analysis, workflow builder","Revenue leakage agent: cases, root cause, and workflows"],
+proc:["Concept interface for a procurement approval agent: requests, quote comparison, approval flow","Procurement approval agent: quotes and approval flow"],
+sup:["Concept bilingual interface for a supplier negotiation agent: supplier comparison, RFQ hub, live negotiation","Supplier negotiation agent, English and Arabic interface"],
+inv:["Concept bilingual interface for an inventory and procurement agent: reorder, purchase orders, stocktake","Inventory and procurement agent: reorder, purchase orders, stocktake"],
+pi:["Concept interface for a process intelligence agent: workflow analysis, bottlenecks, SLA monitoring","Process intelligence agent: bottlenecks and SLA monitoring"],
+dp:["Concept interface for a demand and pricing agent: forecasting, margins, execution history","Demand and pricing agent: forecasting and margin analysis"],
+trv:["Concept interface for a travel booking agent: search, approvals, spend analytics","Travel booking agent: search, approval workflow, spend analytics"]};
+const wp=p=>p.replace(/\.\w+$/,".webp");
+const M={cs:["Conversational AI","Workflow builder, supervisor workspace with live chats, tickets and complaints table, KPI analytics"],chat:["Data analytics","Chat command center beside query history, data table, automation builder, and audit log"],crm:["Sales operations","Deal pipeline board, lead detail with timeline, follow-up sequence builder, analytics, lead table"],shop:["E-commerce operations","Arabic right-to-left dashboard with orders, inventory alerts, shipment tracking, returns, and rules"],mkt:["Marketing analytics","Campaign tables, cross-channel budget allocation, performance dashboard, rule builder, audit log"],invc:["Financial operations","Payment-to-invoice matching, overdue aging workspace, collection forecasting, agent execution history"],rr:["Financial analytics","Discovery queue, recovery case detail, playbook builder, recovery analytics"],leak:["Financial analytics","Detected leakage cases, root-cause view, agent configuration, workflow builder, reporting"],proc:["Enterprise procurement","Agent chat, quote comparison, approval workflow stages, vendor scorecards"],sup:["Procurement &amp; sourcing","Bilingual supplier comparison, RFQ hub, negotiation monitor, supplier analytics, agent settings"],inv:["Inventory &amp; supply chain","Reorder management, AI insights dashboard, purchase-order stages, stocktake reconciliation"],pi:["Process intelligence","Workflow analysis, bottleneck drill-down, SLA monitoring, insights, integrations"],dp:["Demand &amp; pricing","Forecast detail, margin deep-dive, pricing strategy builder, execution history, data connectors"],trv:["Travel &amp; expense","Trip search, booking management, approval workflow, spend analytics"]};
+const fig=k=>`<figure><button class="fb" data-k="${k}" aria-label="Enlarge: ${D[k][1]}"><picture><source type="image/webp" srcset="${wp(IM[k].s)}"><img src="${IM[k].s}" width="${IM[k].w}" height="${IM[k].h}" alt="${D[k][0]}" loading="lazy" decoding="async"></picture></button><figcaption>${M[k]?`<span class="dom">${M[k][0]}</span>${D[k][1]}<span class="sh">Shows: ${M[k][1]}.</span>`:D[k][1]}</figcaption></figure>`;
+document.getElementById("ver").innerHTML=fig("ver");
+document.getElementById("wf").innerHTML=[
+["n1","Lead intake, voice call, and booking","Three separate webhook-triggered flows on one canvas.",["A Tally form submission upserts a record in Airtable, signs a JWT, and posts to the Vapi call API","A booking tool call goes to an OpenAI model node with a tool attached, then posts to the Cal.com bookings API and returns the result to the caller","An end-of-call report branches on call success and qualification, updates or fetches the Airtable record, and sends Gmail messages"]],
+["n2","Form-triggered AI agent with memory","Annotated canvas. Related repository: <a href=\"https://github.com/muzansiddig/AI-Deal-Negotiation-Simulator\" target=\"_blank\" rel=\"noopener noreferrer\">AI Deal &amp; Negotiation Simulator</a>, which documents n8n with OpenAI GPT or Gemini.",["A webhook receives the form submission and passes it to an AI Agent node","The agent uses Window Buffer Memory and a Google Gemini chat model; an OpenAI model node supports text and decision tasks","A true or false condition routes to Gmail send nodes, and Google Sheets appends a row when the criteria are met"]]
+].map(w=>`<article>${fig(w[0])}<h3>${w[1]}</h3><p>${w[2]}</p><ul class="ck">${w[3].map(x=>`<li>${x}</li>`).join("")}</ul></article>`).join("");
+const Gs=[
+{t:"Customer support & conversational reporting",d:"Route and answer customer inquiries from approved knowledge with human escalation, and let teams ask data questions in plain language with a logged execution trail.",n:"Helpdesk · messaging channels · knowledge base · databases",m:"cs",s:["chat"]},
+{t:"Sales, marketing & e-commerce operations",d:"Capture and qualify leads, answer order questions from verified data, and tune campaigns against explicit rules.",n:"CRM · store platform · ad platforms · email",m:"crm",s:["shop","mkt"]},
+{t:"Finance & document processing",d:"Extract and match invoice, payment, and billing data, flag inconsistencies, and queue uncertain items for human review.",n:"Accounting systems · payment data · document storage",m:"invc",s:["rr","leak"]},
+{t:"Procurement, supplier & inventory operations",d:"Compare quotes and suppliers, route requests through approval chains, and keep stock levels and purchase orders in step.",n:"ERP · purchasing · vendor portals",m:"proc",s:["sup","inv"]},
+{t:"Operations intelligence & booking workflows",d:"Surface process bottlenecks, forecast demand, and automate approval-heavy flows such as travel booking, with every agent action logged.",n:"Event logs · BI tools · booking and expense systems",m:"pi",s:["dp","trv"]}];
+document.getElementById("gr").innerHTML=Gs.map((g,i)=>`<article class="gp${i%2?" fl":""}"><div class="gt"><h3>${g.t}</h3><p>${g.d}</p><span class="mono">Proposed integrations: ${g.n}</span><button class="b" data-w="${i}">Discuss this workflow</button></div><div>${fig(g.m)}</div><div class="gs">${g.s.map(fig).join("")}</div></article>`).join("");
+const C=[
+["AI agents & LLM applications","AI-OS: gateway, planner, and five agent runtimes over local Ollama models.","NexaDesk AI: agent settings, runs, tasks, and approvals; deterministic fake provider for tests and an optional server-side OpenAI adapter.","Business & Market Analysis: six specialized AI agents (per README)."],
+["Workflow automation","AI Deal & Negotiation Simulator: n8n agent with OpenAI GPT or Gemini (per README).","n8n canvases above: webhooks, Airtable, Vapi and Cal.com API calls, Gmail, Google Sheets."],
+["Full-stack engineering","NexaDesk AI: Vite front end, Node.js API, PostgreSQL, Docker Compose.","FinSight: React 18 and Node.js 20+ (per README).","Software Effort Estimation: FastAPI back end with a React and Vite front end."],
+["Backend & API integrations","FastAPI services with a shared health and chat contract (AI-OS).","Auth0 OIDC and JWT validation, SSE, and a Telegram webhook adapter with secret validation (NexaDesk AI)."],
+["Machine learning & data","Software Effort Estimation: COCOMO II with XGBoost in Python on the NASA93 dataset.","B-NOS: AI business analytics dashboard that turns metrics into ROI insights."],
+["Mobile","Believer AI: Flutter application (Flutter SDK ^3.29.2 per README)."],
+["Document & finance workflows","FinSight: invoice and document review in isolated per-organization workspaces. See the repository for the implemented scope."],
+["Testing & reliability","NexaDesk AI: Playwright E2E, API, and integration tests covering tenancy, idempotency, outbox behavior, and stale-state conflicts.","AI-OS: end-to-end gateway and multi-service verification scripts."]];
+document.getElementById("cap").innerHTML=C.map(c=>`<div class="cr"><h3>${c[0]}</h3><div>${c.slice(1).map(x=>{const i=x.indexOf(":");return `<p><b>${x.slice(0,i)}</b>${x.slice(i)}</p>`}).join("")}</div></div>`).join("");
+const P=[
+["NexaDesk AI","Autonomous-AI-Contact-Center-NexaDesk-AI","AI applications","Human-supervised AI customer conversation platform.","TypeScript · Node.js · PostgreSQL",1],
+["AI-OS","AI-OS","AI applications","Gateway that routes tasks across local agent runtimes.","Python · FastAPI · Ollama",1],
+["Veritas Legal","Veritas-Legal","AI applications","Legal intelligence platform; README describes a modular monolith.","See repository",1],
+["Believer AI","believer-app","Mobile","Cross-platform Flutter mobile application.","Flutter · Dart"],
+["AI Deal Negotiation Simulator","AI-Deal-Negotiation-Simulator","Workflow automation","n8n agent for deal negotiation and decision workflows.","n8n · OpenAI / Gemini"],
+["FinSight","finsigth","Finance & BI","Invoice and document review in per-organization workspaces.","Node.js · React"],
+["B-NOS","B-NOS-Business-Neural-Operating-System","Finance & BI","AI business dashboard that turns metrics into ROI insights.","AI analytics dashboard"],
+["Business & Market Analysis","Intelligent-multi-expert-system-for-business-market-analysis","Finance & BI","Multi-agent AI market analysis and strategy system.","Python · multi-agent AI"],
+["Zenith","Zenith","Full-stack","AI productivity SaaS: tasks, habits, budgets, template generation.","Full-stack SaaS"],
+["PrimeHomes","PrimeHomes-Luxury-Real-Estate","Full-stack","Luxury real-estate website with dark and gold styling.","Responsive web"],
+["Software Effort Estimation","Software-Effort-Estimation","ML & data","Effort estimation with COCOMO II and XGBoost.","Python · FastAPI · React"]];
+const cats=["All",...new Set(P.map(p=>p[2]))];let cur="All";
+const ch=document.getElementById("ch"),dr=document.getElementById("dr"),q=document.getElementById("q");
+ch.innerHTML=cats.map(c=>`<button aria-pressed="${c===cur}" data-c="${c}">${c}</button>`).join("");
+function draw(){const k=q.value.trim().toLowerCase();
+const L=P.filter(p=>(cur==="All"||p[2]===cur)&&(!k||p.slice(0,5).join(" ").toLowerCase().includes(k)));
+dr.innerHTML=L.length?L.map(p=>`<div class="rw"><h3>${p[0]}${p[5]?" (featured)":""}</h3><p>${p[3]}</p><span class="mono">${p[4]}</span><a href="${G+p[1]}" ${ex}>Repository</a></div>`).join(""):`<div class="em">No repositories match. Clear the search or pick All.</div>`;}
+ch.onclick=e=>{const b=e.target.closest("button");if(!b)return;cur=b.dataset.c;ch.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));draw()};
+q.oninput=draw;draw();
+const mn=document.getElementById("mn"),lk=document.getElementById("lk");
+mn.onclick=()=>{mn.setAttribute("aria-expanded",lk.classList.toggle("o"))};
+lk.onclick=e=>{if(e.target.closest("a")){lk.classList.remove("o");mn.setAttribute("aria-expanded","false")}};
+addEventListener("keydown",e=>{if(e.key==="Escape"){lk.classList.remove("o");mn.setAttribute("aria-expanded","false")}});
+const lb=document.getElementById("lb");
+document.addEventListener("click",e=>{const f=e.target.closest(".fb");if(f){const k=f.dataset.k,i=lb.querySelector("img");i.src=wp(IM[k].s);i.alt=D[k][0];i.style.maxWidth=IM[k].w<800?Math.round(IM[k].w*1.6)+"px":"none";lb.querySelector("p").textContent=D[k][1];lb.showModal();return}
+if(e.target===lb||e.target.id==="lx")lb.close()});
+const t=document.getElementById("t"),m=document.getElementById("m"),ss=document.getElementById("ss");
+document.getElementById("gr").addEventListener("click",e=>{const b=e.target.closest("[data-w]");if(!b)return;
+t.value="AI automation workflow";m.value="I’d like to discuss a workflow like “"+Gs[b.dataset.w].t+"”: ";location.hash="contact";m.focus({preventScroll:true})});
+document.getElementById("go").onclick=async()=>{const text=`Topic: ${t.value}\n${m.value}`.trim();
+try{await navigator.clipboard.writeText(text);ss.textContent="Opening LinkedIn. Your note is copied, so paste it into the message box."}catch(_){ss.textContent="Opening LinkedIn."}};
+document.documentElement.classList.add("js");
+(()=>{const ls=[...document.querySelectorAll('.lk a[href^="#"]:not(.b)')],ss2=ls.map(a=>document.querySelector(a.getAttribute("href")));
+if(!("IntersectionObserver" in window))return;
+const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=ss2.indexOf(e.target);ls.forEach((a,j)=>{a.classList.toggle("on",j===i);j===i?a.setAttribute("aria-current","true"):a.removeAttribute("aria-current")})}}),{rootMargin:"-45% 0px -50% 0px"});
+ss2.forEach(x=>x&&o.observe(x))})();
+(()=>{const els=[...document.querySelectorAll("h2,.ld,.pj,.gp,.cr,.ab,.fm,.wfg article,.rc")];els.forEach(el=>el.classList.add("rv"));
+const show=el=>el.classList.add("in");
+if(!("IntersectionObserver" in window)){els.forEach(show);return}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){show(e.target);io.unobserve(e.target)}}),{threshold:.08});els.forEach(el=>io.observe(el));})();
+</script></body></html>
